@@ -199,4 +199,14 @@
             android:onClick="onOperationClick"/>
 
     </LinearLayout>
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сохранить"
+        android:onClick="Save"
+        android:layout_gravity="right"
+        android:textAllCaps="false"
+        android:textColor="#074E07"
+        android:textSize="20sp"/>
 </LinearLayout>

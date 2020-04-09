@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@android:color/holo_green_light"
-    android:padding="16dp">
+    android:padding="10dp">
     <LinearLayout
         android:id="@+id/result"
         android:layout_width="match_parent"
@@ -19,12 +19,12 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:textColor="#0B650F"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
         <TextView
             android:id="@+id/operation"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:textColor="@android:color/black"
             android:layout_height="wrap_content"
             />
@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:background="#C8D5D0"
         android:inputType="phone"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:textColor="@android:color/black" />
     <LinearLayout
         android:layout_width="match_parent"
@@ -198,4 +198,14 @@
             android:onClick="onOperationClick"/>
 
     </LinearLayout>
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сохранить"
+        android:onClick="Save"
+        android:layout_gravity="right"
+        android:textAllCaps="false"
+        android:textColor="#074E07"
+        android:textSize="20sp"/>
 </LinearLayout>

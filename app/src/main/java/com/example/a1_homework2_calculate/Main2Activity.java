@@ -7,13 +7,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 import java.util.ArrayList;
 
 import static android.content.Intent.EXTRA_TEXT;
 
 public class Main2Activity extends AppCompatActivity implements View.OnClickListener {
-    TextView infoTextView;
     static int TEXT_KEY = 2;
     private RecyclerView recyclerView;
     private Main2Adapter adapter;
@@ -25,6 +23,7 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+
 // Применение Recycler View списка
         recyclerView = findViewById(R.id.recycler_view);
         layoutManager = new LinearLayoutManager(this);

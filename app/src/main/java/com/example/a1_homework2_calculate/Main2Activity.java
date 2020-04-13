@@ -25,11 +25,6 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-//        infoTextView = findViewById(R.id.text);
-//        if (savedInstanceState != null) {
-//            save_result = savedInstanceState.getString("save_result");
-//            infoTextView.setText(save_result);
-//                    }
 // Применение Recycler View списка
         recyclerView = findViewById(R.id.recycler_view);
         layoutManager = new LinearLayoutManager(this);
@@ -39,11 +34,6 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
         recyclerView.setAdapter(adapter);
     }
 
-//    @Override
-//    public void onSaveInstanceState(Bundle outState) {
-//        super.onSaveInstanceState(outState);
-//        outState.putString("save_result", recyclerView.getText().toString());
-//    }
     @Override
     public void onClick(View v) {
         switch (v.getId()) {

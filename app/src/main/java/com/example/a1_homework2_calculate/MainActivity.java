@@ -1,6 +1,8 @@
 package com.example.a1_homework2_calculate;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,7 +11,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
     TextView result_field;
     TextView operation;
     EditText number_field;
@@ -48,13 +49,14 @@ public class MainActivity extends AppCompatActivity {
                 if (number.length() > 0) {
                     number = number.replace('.', '.');
                     try {
-                        performOperation(Double.valueOf(number), op);
+                        performOperation(Double.valueOf(String.valueOf(number)), op);
                     } catch (NumberFormatException ex) {
                         number_field.setText("");
                     }
                 }
                 lastOperation = op;
                 operation.setText(lastOperation);
+
             }
             private void performOperation(Double number, String operation) {
                 if (operand == null) {
